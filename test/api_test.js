@@ -1,6 +1,6 @@
+'use strict';
 process.env.NODE_ENV = 'TEST';
 /*jshint node: true*/
-'use strict';
 var chai = require('chai');
 var chaihttp = require('chai-http');
 var app = require('../server');

@@ -28,6 +28,7 @@ app.get('/name/:msg', function (req, res) {
 app.listen(port, function () {
     console.log("running on port: " + port);
 });
-if (process.env.NODE_ENV === 'TEST') {
-    module.exports = app;
+
+if ( process.env.NODE_ENV === 'TEST' ) {
+  module.exports = app;
 }
