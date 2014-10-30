@@ -1,6 +1,6 @@
 'use strict';
-/*jshint node: true*/
 process.env.NODE_ENV = 'TEST';
+/*jshint node: true*/
 var chai = require('chai');
 var chaihttp = require('chai-http');
 var app = require('../server');
@@ -17,6 +17,7 @@ describe('Simple JSON API', function () {
                 chai.expect(res.body.minute).to.equal(new Date().getMinutes());
                 done();
             });
+
     });
 
     it('/name/:name should greet someone', function (done) {
